@@ -148,7 +148,7 @@ document.querySelector("#newsWebsite").addEventListener("click",
     });
 document.querySelector("#portfolioWebsite").addEventListener("click",
     () => {
-        window.location.href = "https://github.com/abhayprasad565/News-Website";
+        window.location.href = "https://github.com/abhayprasad565/abhayprasad565-portfolio";
     });
 document.querySelector("#spotifyClone").addEventListener("click",
     () => {
