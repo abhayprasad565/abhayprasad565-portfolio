@@ -500,6 +500,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
     }
 
@@ -514,6 +515,152 @@ h1 {
 
     .navbar-icon {
         margin-top: 10px;
+    }
+
+    #m1,
+    #m2 {
+        top: 300px;
+    }
+
+    #parallax-text h6 {
+        font-size: medium;
+    }
+
+    #parallax-text h3 {
+        font-size: small;
+    }
+
+    #parallax-text p {
+        font-size: x-small;
+    }
+
+    .parallax {
+        height: 70vh;
+    }
+
+    #about-me-logo {
+        width: 20px;
+        height: 20px;
+        padding-right: 5px;
+    }
+
+    .about-me p {
+        font-size: larger;
+        margin-right: 2px;
+    }
+
+    .intro-card-container {
+        flex-direction: column;
+    }
+
+    .intro-img img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .intro-card {
+        width: 90%;
+    }
+
+    .intro-card h1 {
+        font-size: large;
+    }
+
+    .intro-card h3 {
+        font-size: medium;
+    }
+
+    .intro-card p {
+        font-size: x-small;
+    }
+
+    .resume-btn a {
+        font-size: x-small;
+        padding-top: 5px;
+    }
+
+    .resume-btn {
+        margin-top: 5px;
+        height: fit-content;
+    }
+
+    .email,
+    .place {
+        font-size: small;
+    }
+
+    .intro {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .about-me {
+        width: 250px;
+    }
+
+    .skill {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill h2 {
+        font-size: x-small;
+    }
+
+    .education-qoute {
+        font-size: x-small;
+    }
+
+    .education-card {
+        justify-content: flex-start;
+    }
+
+    .education-card img {
+        width: 50px;
+        height: 80px;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .education-card-info h1 {
+        font-size: medium;
+    }
+
+    .education-card-info h2 {
+        font-size: small;
+    }
+
+    .education-card-info h3 {
+        font-size: x-small;
+    }
+
+    .skills,
+    .education,
+    .projects {
+        height: fit-content;
+    }
+
+    .education {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .flip-card,
+    .flip-card-inner,
+    .flip-card-back,
+    .flip-card-front,
+    .flip-card-front img {
+        width: 100px !important;
+        height: 100px !important;
     }
 
 
