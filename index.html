@@ -133,7 +133,7 @@
             <img src="img/education.svg" alt="" id="about-me-logo">
             <p style="color: purple;">My</p> <p>Education</p>
         </div>
-        <div>Education is one thing no one can take away from you.</div>
+        <div class="education-qoute">Education is one thing no one can take away from you.</div>
         <div class="education-card-container">
             <div class="education-card">
                  <img src="img/education/tmsl.jpeg" alt="">
@@ -157,85 +157,90 @@
 
 
     <div class="projects">
-        <div class="about-me">
+        <div class="about-me" id="projects">
             <img src="img/projects/code.svg" alt="" id="about-me-logo">
             <p style="color: rgb(255, 255, 255);">My</p> <p style="color: #a1ff92;">Projects</p>
         </div>
         <div class="projects-cards-container">
+             <div class="project-card" link="https://github.com/abhayprasad565/abhayprasad565-portfolio">
+              <img src="img/projects/portfolio.jpg" alt="">
+              <h2>Portfolio Website</h2>
+              <p>Responsive and interactive Portfolio website made with HTML , CSS and JS </p>
+             </div>
+              <div class="project-card" link="https://github.com/abhayprasad565/News-Website">
+               <img src="img/projects/news.jpg" alt="">
+               <h2>News Website</h2>
+               <p>A news website using newsapi.org api and  HTML , Bootstrap and JS </p>
+              </div>
+              <div class="project-card" link="https://github.com/abhayprasad565/Spotify-clone">
+                <img src="img/projects/spotify.jpg" alt="">
+                <h2>Spotify Clone</h2>
+                <p>Spotify frontend Landing page made using html and css</p>
+               </div>
+               <div class="project-card" link="https://github.com/abhayprasad565/Simon-Say-game">
+                <img src="img/projects/simon.jpg" alt="">
+                <h2>Simon Says Game</h2>
+                <p> An Interactive memmory enhancing game made using HTML , CSS and JS </p>
+               </div>
 
-            
-                <div class="flip-card" id="newsWebsite">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/projects/news.jpg" alt="Avatar" style="width: 300px;height: 200px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>News Website</h1> 
-                        <p>OpenSource news Website using newsapi.org api</p> 
-                        <p>Made with HTML , CSS and JavaScript</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-                  <div class="flip-card" id="portfolioWebsite">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/projects/portfolio.jpg" alt="Avatar" style="width: 300px;height: 200px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Portfolio Website</h1> 
-                        <p>Responsive & interactive portfolio</p> 
-                        <p>Made with HTML , CSS and JavaScript</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="flip-card"  id="spotifyClone">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/projects/spotify.jpg" alt="Avatar" style="width: 300px;height: 200px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Spotify Clone</h1> 
-                        <p>A spotify landing page website</p> 
-                        <p>Made with HTML and CSS</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="flip-card" id="simon">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/projects/simon.jpg" alt="Avatar" style="width: 300px;height: 200px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Simon Says game</h1> 
-                        <p>An interactive memmory Enhancing game</p> 
-                        <p>Made using HTML , CSS and JavaScript</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="flip-card" id="brickBreaker">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img/projects/brick-breaker.jpg" alt="Avatar" style="width: 300px;height: 200px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>BrickBreaker Game</h1> 
-                        <p>An interactive 1 player game</p> 
-                        <p>Made using JAVA and SWING and AWT libraries</p>
-                      </div>
-                    </div>
-                  </div>
+               <div class="project-card" link="https://github.com/abhayprasad565/BRICK-BREAKER-BY-ABHAY">
+                <img src="img/projects/brick-breaker.jpg" alt="">
+                <h2>Brick Breaker Game</h2>
+                <p> An One player game made using JAVA , swing  and AWT lib</p>
+               </div>
+         
         </div>
+       
+        
     </div>
+
+
+    <div class="contact">
+      <div class="about-me" id="projects">
+        <img src="img/contact.svg" alt="" id="about-me-logo">
+        <p style="color: purple;">Contact</p> <p style="color: #000000;">me</p>
+    </div>
+
+    <div class="contact-card">
+      <img src="img/contact.jpg" alt="">
+      <div class="contact-section">
+       <div class="name">
+        <div class="material-symbols-outlined">
+        person
+        </div>
+           <input type="text" placeholder="Name" id="name"> </div>
+       <div class="emails">
+        <div class="material-symbols-outlined">
+        mail
+        </div>
+           <input type="text" placeholder="Email" id="emails"> 
+        </div>
+       <div class="phone">
+        <div class="material-symbols-outlined">
+          call
+          </div>
+         <input type="number" placeholder="Phone" id="phone"> </div>
+       <div class="message">
+        <div class="material-symbols-outlined">
+          sms
+          </div>
+         <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your message"></textarea>
+        </div>
+        <div class="submit-button">
+          <button onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("JmVnm-92UwpRy_rwo");
+   })();
+</script>
 
 
     <!-- js scroll -->

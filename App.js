@@ -61,8 +61,14 @@ window.addEventListener("scroll", () => {   // select the value scrolled
 function parallaxAnimate(value) {
     text.style.marginTop = value * 1.5 + 'px';
     text.style.opacity = (100) - value * 0.5 + '%';
-    mountain1.style.top = (50) + value * (-0.2) + 'px';
-    mountain2.style.top = (50) + value * (-0.22) + 'px';
+    if (screen.width > 450) {
+        mountain1.style.top = (50) + value * (-0.2) + 'px';
+        mountain2.style.top = (50) + value * (-0.22) + 'px';
+    }
+    else {
+        mountain1.style.top = (300) + value * (-0.1) + 'px';
+        mountain2.style.top = (300) + value * (-0.1) + 'px';
+    }
 
 
     plants.style.bottom = value * -0.01 + 'px';
@@ -142,26 +148,29 @@ function educationCardAnimate(top) {
 
 
 
-document.querySelector("#newsWebsite").addEventListener("click",
-    () => {
-        window.location.href = "https://github.com/abhayprasad565/News-Website";
-    });
-document.querySelector("#portfolioWebsite").addEventListener("click",
-    () => {
-        window.location.href = "https://github.com/abhayprasad565/abhayprasad565-portfolio";
-    });
-document.querySelector("#spotifyClone").addEventListener("click",
-    () => {
-        window.location.href = "https://github.com/abhayprasad565/Spotify-clone";
-    });
-document.querySelector("#simon").addEventListener("click",
-    () => {
-        window.location.href = "https://github.com/abhayprasad565/Simon-Say-game";
-    });
-document.querySelector("#brickBreaker").addEventListener("click",
-    () => {
-        window.location.href = "https://github.com/abhayprasad565/BRICK-BREAKER-BY-ABHAY";
-    });
+let projects = document.querySelectorAll(".project-card");
+for (card of projects) {
+    card.addEventListener("click", function () {
+        console.log(window.location.href = this.getAttribute("link"));
+    })
+}
+
+function sendMail() {
+    let params = {
+        name: document.querySelector("#name").value,
+        email: document.querySelector("#emails").value,
+        phone: document.querySelector("#phone").value,
+        message: document.querySelector("#message").value + "sent by " + document.querySelector("#emails").value
+    }
+    const serviceId = "service_tjjusg9";
+    emailjs.send(serviceId, "template_71acm9t", params)
+        .then(
+            res => {
+
+                alert("your message was sent");
+            }
+        ).catch((err) => console.log(err));
+}
 
 
 
