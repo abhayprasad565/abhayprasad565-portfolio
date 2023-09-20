@@ -558,20 +558,7 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width:900px) {}
 
 
 
@@ -596,6 +583,10 @@ h1 {
 
 
 @media (max-width:450px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -635,7 +626,7 @@ h1 {
     }
 
     .parallax {
-        height: 70vh;
+        height: 60vh;
     }
 
     #about-me-logo {
@@ -719,6 +710,7 @@ h1 {
 
     .education-card {
         justify-content: flex-start;
+        height: 100px;
     }
 
     .education-card img {
@@ -752,6 +744,55 @@ h1 {
 
     .navbar {
         position: static;
+    }
+
+    .project-card img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .project-card {
+        width: 100px;
+        height: 120px;
+    }
+
+    .project-card h2 {
+        font-size: x-small;
+    }
+
+    .project-card p {
+        font-size: xx-small;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    .contact-card img {
+        width: 80%;
+        height: 30%;
+    }
+
+    .contact-section {
+        width: 90%;
+    }
+
+    .emails,
+    .phone,
+    .message,
+    .name {
+
+        width: 100%;
+    }
+
+    #emails,
+    #phone,
+    #message,
+    #name {
+        width: 100%;
     }
 
 

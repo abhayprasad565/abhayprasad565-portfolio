@@ -59,16 +59,14 @@ window.addEventListener("scroll", () => {   // select the value scrolled
 });
 
 function parallaxAnimate(value) {
+    parallaxY = ((screen.width) / 100);
+    if (screen.width > 900) parallaxY *= 5;
+    else parallaxY *= 80;
     text.style.marginTop = value * 1.5 + 'px';
     text.style.opacity = (100) - value * 0.5 + '%';
-    if (screen.width > 450) {
-        mountain1.style.top = (50) + value * (-0.2) + 'px';
-        mountain2.style.top = (50) + value * (-0.22) + 'px';
-    }
-    else {
-        mountain1.style.top = (300) + value * (-0.1) + 'px';
-        mountain2.style.top = (300) + value * (-0.1) + 'px';
-    }
+
+    mountain1.style.top = (parallaxY) + value * (-0.1) + 'px';
+    mountain2.style.top = (parallaxY) + value * (-0.1) + 'px';
 
 
     plants.style.bottom = value * -0.01 + 'px';
